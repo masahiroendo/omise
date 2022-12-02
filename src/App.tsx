@@ -1,5 +1,5 @@
-import { CiDark } from "react-icons/Ci";
-import { AiOutlineHome } from "react-icons/Ai";
+import { CiDark } from "react-icons/ci";
+import { AiOutlineHome } from "react-icons/ai";
 
 function App() {
   return (
