@@ -1,6 +1,7 @@
 import { FC, useContext } from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { CiDark } from "react-icons/ci";
+import { AiOutlineSend } from "react-icons/ai";
 import { MdOutlineLightMode } from "react-icons/md";
 import ThemeContext from "./assets/context/themeContext";
 
@@ -11,28 +12,19 @@ const Header: FC = () => {
 
   return (
     <header className={`px-10 ${darkModeBgAndText}`}>
-      <nav className={"py-10 flex justify-between"}>
-        <h1 className="text-2xl">Omise</h1>
-        <ul className="flex items-center">
-          <li>
-            <a href="#home">
-              <AiOutlineHome />
-            </a>
-          </li>
-          <li>
-            {darkMode ? (
-              <MdOutlineLightMode
-                onClick={toggleDark}
-                className="text-3xl cursor-pointer text-white"
-              />
-            ) : (
-              <CiDark
-                onClick={toggleDark}
-                className="text-3xl cursor-pointer"
-              />
-            )}
-          </li>
-        </ul>
+      <nav className="py-4 md:py-10 container mx-auto flex flex-wrap flex-row justify-between">
+        <a className="flex text-2xl items-center gap-1" href="/">
+          <AiOutlineSend className="duration-300 rotate-45 hover:rotate-0 cursor-pointer" />
+          <span>Omise</span>
+        </a>
+        {darkMode ? (
+          <MdOutlineLightMode
+            onClick={toggleDark}
+            className="text-3xl cursor-pointer text-white"
+          />
+        ) : (
+          <CiDark onClick={toggleDark} className="text-3xl cursor-pointer" />
+        )}
       </nav>
     </header>
   );
