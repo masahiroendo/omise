@@ -2,7 +2,7 @@ import { useContext } from "react";
 
 import { darkModeBgAndText } from "./tailwindClasses";
 import Header from "./Header";
-import ThemeContext from "./assets/context/themeContext";
+import ThemeContext from "./context/ThemeContext";
 
 function App() {
   const { darkMode } = useContext(ThemeContext);

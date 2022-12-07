@@ -3,7 +3,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { CiDark } from "react-icons/ci";
 import { AiOutlineSend } from "react-icons/ai";
 import { MdOutlineLightMode } from "react-icons/md";
-import ThemeContext from "./assets/context/themeContext";
+import ThemeContext from "./context/ThemeContext";
 
 import { darkModeBgAndText } from "./tailwindClasses";
 
